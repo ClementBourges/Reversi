@@ -1,8 +1,7 @@
-rootProject.name = "cours-jee-5-scope"
+rootProject.name = "Reversi"
 
-include("scope-java", "scope-kotlin")
+include("scope-java")
 includeIfExists(projectName = "tp-display-quote-v3-java")
-includeIfExists(projectName = "tp-display-quote-v3-kotlin")
 
 fun includeIfExists(projectName: String) {
     if (file(projectName).exists()) {
