@@ -1,4 +1,4 @@
-package isima.reversi;
+package isima.fr.Reversi;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;
@@ -14,4 +14,3 @@ public class ReversiApplicationTests {
 	}
 
 }
-
