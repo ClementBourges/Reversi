@@ -24,11 +24,12 @@ public class AppMainMVCController {
         return this.quotesMVCController.getQuote("apps-grille", 1);
     }*/
 
-    private Grille grille;
+    public Grille grille;
 
     @GetMapping
     public ModelAndView main() {
         //return this.quotesMVCController.getQuote("apps-main", 1);
+        grille= new Grille();
         return new ModelAndView("apps-grille", "Grille", grille);
     }
 }
