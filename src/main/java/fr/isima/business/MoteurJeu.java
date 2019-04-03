@@ -156,5 +156,18 @@ public class MoteurJeu {
             }
             tour++;
         }
+        int point=comptePoint(grille);
+        if (point > 32){
+            System.out.print("Joueur 1 gagne avec ");
+            System.out.println(point);
+            System.out.print("Joueur 2 a ");
+            System.out.println(64-point);
+        }
+        else {
+            System.out.print("Joueur 2 gagne avec ");
+            System.out.println(64- point);
+            System.out.print("Joueur 1 a ");
+            System.out.println(point);
+        }
     }
 }
