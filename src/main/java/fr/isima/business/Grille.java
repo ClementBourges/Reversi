@@ -2,7 +2,9 @@ package fr.isima.business;
 
 public class Grille {
     public int[][] matrice=new int[8][8];
-
+    public String joueur_1;
+    public String joueur_2;
+    public int tour;
     public Grille(){
         int i, j;
         for(i=0; i<matrice.length; i++) {
