@@ -24,12 +24,16 @@ public class AppMainMVCController {
         return this.quotesMVCController.getQuote("apps-grille", 1);
     }*/
 
-    public Grille grille;
+    private GrilleController grilleController;
+
+    @Autowired
+    public AppMainMVCController(GrilleController grilleController) {
+        this.grilleController = grilleController;
+    }
 
     @GetMapping
     public ModelAndView main() {
-        //return this.quotesMVCController.getQuote("apps-main", 1);
-        grille= new Grille();
-        return new ModelAndView("apps-grille", "Grille", grille);
+        return this.grilleController.getGrille("apps-grille");
     }
+
 }

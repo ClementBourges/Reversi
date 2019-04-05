@@ -2,8 +2,9 @@ package fr.isima.business;
 
 public class Grille {
     public int[][] matrice=new int[8][8];
-
+    public int tour;
     public Grille(){
+        tour = 0;
         int i, j;
         for(i=0; i<matrice.length; i++) {
             for(j=0; j<matrice[i].length; j++) {
